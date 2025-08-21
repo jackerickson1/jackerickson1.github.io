@@ -1,0 +1,190 @@
+/* style.css */
+
+/* Base styles */
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  margin: 0;
+  color: #1a1a1a;
+  background-color: #fafafa;
+  line-height: 1.6;
+}
+
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Layout container */
+section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+  margin-top: 2rem;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: .5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+  color: #374151;
+}
+
+/* Top contact bar */
+#contact {
+  background: #111827;
+  color: #f9fafb;
+  text-align: center;
+  padding: .5rem 1rem;
+  font-size: 0.95rem;
+}
+
+#contact a {
+  color: #f9fafb;
+  margin: 0 0.5rem;
+}
+
+/* Hero section */
+.hero {
+  text-align: center;
+  padding: 6rem 1.5rem 4rem;
+  background: linear-gradient(135deg, #f0f4ff, #ffffff);
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: .5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #4b5563;
+  margin-bottom: 2rem;
+}
+
+#contact img {
+  height: 28px;   /* pick the size you like (20–32px works well) */
+  width: auto;    /* keeps aspect ratio so icons don’t look squished */
+  vertical-align: middle; /* aligns them nicely with the text baseline */
+}
+
+#contact a {
+  display: inline-block;
+  margin: 0 8px; /* spacing between icons */
+}
+
+.cta .btn {
+  display: inline-block;
+  margin: 0 .5rem;
+  padding: .75rem 1.25rem;
+  border-radius: 9999px;
+  background: #2563eb;
+  color: white;
+  font-weight: 500;
+  transition: background .2s;
+}
+
+.cta .btn:hover {
+  background: #1e40af;
+}
+
+/* Card layout */
+.card {
+  background: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+/* Media elements (iframes, images) */
+.card iframe, 
+.card img {
+  width: 100%;
+  border-radius: .75rem;
+  margin-top: 1rem;
+}
+
+/* Responsive video embed */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 ratio */
+  height: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Layout for "Performance You Deserve" videos */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-md);
+}
+/* Responsive video embed */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 ratio */
+  height: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Layout for "Performance You Deserve" videos */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-md);
+}
+
+/* Lists */
+section ul {
+  list-style: none;
+  padding: 0;
+}
+
+section ul li {
+  margin-bottom: .75rem;
+}
+
+section ul li a {
+  font-weight: 500;
+}
+
